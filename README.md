@@ -23,8 +23,11 @@ The project is structured according to the MVP (Model-View-Presenter) pattern, w
 ### Installation
 
 1. **Build the Project**: 
-   Navigate to the root directory of the SmartCalc project. Run the following command to compile and package the project. This command will also trigger the `build_app_linux.sh` script, which generates the necessary runtime image and builds the `.deb` installer package:
+   Navigate to the root directory of the SmartCalc project. Run the following command to compile and package the project:
+   
    `mvn clean install`
+   
+   This command will also trigger the `build_app_linux.sh` script, which generates the necessary runtime image and builds the `.deb` installer package
 
 2. **Install the `.deb` Package**: 
    Navigate to the `target/installer` directory, where the `.deb` package will be generated. Install the `.deb` package using `dpkg`:
