@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="403.0" prefWidth="600.0" style="-fx-background-color: #ecf0f1;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.school21.smartcalc.view.CreditController">
+   <children>
+      <Label layoutX="24.0" layoutY="64.0" text="Loan Amount">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="24.0" layoutY="101.0" text="Loan Term">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="24.0" layoutY="138.0" text="Interest Rate">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="24.0" layoutY="281.0" text="Payment Every Month">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="24.0" layoutY="319.0" text="Total Interest">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="24.0" layoutY="355.0" text="Total Payment">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="24.0" layoutY="170.0" text="Type of Payments">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="sumField" layoutX="236.0" layoutY="65.0" prefHeight="25.0" prefWidth="260.0" />
+      <TextField fx:id="termField" layoutX="236.0" layoutY="102.0" prefHeight="25.0" prefWidth="260.0" />
+      <TextField fx:id="rateField" layoutX="236.0" layoutY="139.0" prefHeight="25.0" prefWidth="86.0" />
+      <Label layoutX="504.0" layoutY="64.0" text="₽">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="504.0" layoutY="280.0" text="₽">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="504.0" layoutY="319.0" text="₽">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="504.0" layoutY="355.0" text="₽">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="monthlyPaymentLabel" layoutX="236.0" layoutY="281.0" prefHeight="27.0" prefWidth="260.0" style="-fx-background-color: white;">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="overpaymentLabel" layoutX="236.0" layoutY="319.0" prefHeight="27.0" prefWidth="260.0" style="-fx-background-color: white;">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="fullSumLabel" layoutX="236.0" layoutY="355.0" prefHeight="27.0" prefWidth="260.0" style="-fx-background-color: white;">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="504.0" layoutY="101.0" text="months">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="331.0" layoutY="138.0" text="\%">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="paymentTypeComboBox" layoutX="236.0" layoutY="171.0" prefHeight="25.0" prefWidth="260.0" />
+      <Button fx:id="calculateButton" layoutX="24.0" layoutY="218.0" mnemonicParsing="false" onAction="#handleCalculateButton" prefHeight="41.0" prefWidth="184.0" style="-fx-background-color: #00acee;" text="Calculate" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+      <Label fx:id="errorLabel" layoutX="236.0" layoutY="213.0" prefHeight="51.0" prefWidth="260.0">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="219.0" layoutY="14.0" text="Loan Calculator">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

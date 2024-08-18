@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ScrollPane layoutX="20.0" layoutY="20.0" prefHeight="473.0" prefWidth="668.0">
+         <content>
+            <VBox alignment="TOP_LEFT" prefHeight="520.0" prefWidth="657.0" spacing="10.0">
+               <padding>
+                  <Insets topRightBottomLeft="10.0" />
+               </padding>
+               <children>
+                  <Label text="About SmartCalc">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="46.0" prefWidth="637.0" text="This application is designed to help you perform various mathematical calculations, visualize graphs and calculate the loan amount." wrapText="true">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label text="1. Calculator:" wrapText="true">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label text="- Enter a mathematical expression in the input field." wrapText="true">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="50.0" prefWidth="637.0" text="- Supported operations include addition (+), subtraction (-), multiplication (*), division (/), exponentiation (^), and more complex functions like sin(), cos(), tan(), log(), and sqrt()." wrapText="true">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label text="- Press &quot;Calculate&quot; to see the result." wrapText="true">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label text="2. Plotting:" wrapText="true">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label text="- Enter the function you want to visualize in the function input field." wrapText="true">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label text="- Define the range for the X and Y axes by specifying the minimum and maximum values." wrapText="true">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label text="- Press &quot;Plot Graph&quot; to visualize the function on the graph." wrapText="true">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label text="- If you want to clear the graph area, simply press the &quot;Clear Graph&quot; button." wrapText="true">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label text="3. Loan calculator:" wrapText="true">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label text="- Enter loan details: amount, term, interest rate." wrapText="true">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label text="- Choose the payment type. Annuity and differential payments available ." wrapText="true">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label text="- Press &quot;Calculate&quot; to see the result." wrapText="true">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+         </content>
+      </ScrollPane>
+   </children>
+</AnchorPane>

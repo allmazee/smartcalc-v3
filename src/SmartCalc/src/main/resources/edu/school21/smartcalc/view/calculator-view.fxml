@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<!--<AnchorPane prefHeight="400.0" prefWidth="738.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">-->
+
+<AnchorPane prefHeight="400.0" prefWidth="663.0" style="-fx-background-color: #333333;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.school21.smartcalc.view.CalculatorController">
+    <children>
+        <Button fx:id="sinButton" layoutX="14.0" layoutY="230.0" mnemonicParsing="false" onAction="#handleSinButton" prefHeight="25.0" prefWidth="52.0" style="-fx-background-color: #434343;" text="sin" textFill="WHITE" />
+        <Button fx:id="cosButton" layoutX="81.0" layoutY="230.0" mnemonicParsing="false" onAction="#handleCosButton" prefHeight="25.0" prefWidth="52.0" style="-fx-background-color: #434343;" text="cos" textFill="WHITE" />
+        <Button fx:id="tanButton" layoutX="14.0" layoutY="296.0" mnemonicParsing="false" onAction="#handleTanButton" prefHeight="25.0" prefWidth="52.0" style="-fx-background-color: #434343;" text="tan" textFill="WHITE" />
+        <Button fx:id="lnButton" layoutX="14.0" layoutY="329.0" mnemonicParsing="false" onAction="#handleLnButton" prefWidth="52.0" style="-fx-background-color: #434343;" text="ln" textFill="WHITE" />
+        <Button fx:id="sqrtButton" layoutX="14.0" layoutY="362.0" mnemonicParsing="false" onAction="#handleSqrtButton" prefWidth="52.0" style="-fx-background-color: #434343;" text="sqrt" textFill="WHITE" />
+        <Button layoutX="81.0" layoutY="190.0" mnemonicParsing="false" onAction="#handleXButton" prefHeight="27.0" prefWidth="52.0" style="-fx-background-color: #63c563;" text="x" fx:id="xButton" />
+        <Button fx:id="asinButton" layoutX="14.0" layoutY="263.0" mnemonicParsing="false" onAction="#handleAsinButton" prefHeight="25.0" prefWidth="52.0" style="-fx-background-color: #434343;" text="asin" textFill="WHITE" />
+        <Button fx:id="acosButton" layoutX="81.0" layoutY="263.0" mnemonicParsing="false" onAction="#handleAcosButton" prefWidth="52.0" style="-fx-background-color: #434343;" text="acos" textFill="WHITE" />
+        <Button fx:id="atanButton" layoutX="81.0" layoutY="296.0" mnemonicParsing="false" onAction="#handleAtanButton" prefWidth="52.0" style="-fx-background-color: #434343;" text="atan" textFill="WHITE" />
+        <Button fx:id="logButton" layoutX="81.0" layoutY="329.0" mnemonicParsing="false" onAction="#handleLogButton" prefWidth="52.0" style="-fx-background-color: #434343;" text="log" textFill="WHITE" />
+        <Button fx:id="powerButton" layoutX="81.0" layoutY="362.0" mnemonicParsing="false" onAction="#handlePowerButton" prefWidth="52.0" style="-fx-background-color: #434343;" text="^" textFill="WHITE" />
+        <Button fx:id="modButton" layoutX="14.0" layoutY="191.0" mnemonicParsing="false" onAction="#handleModButton" prefWidth="52.0" style="-fx-background-color: #434343;" text="mod" textFill="WHITE" />
+        <Button fx:id="sevenButton" layoutX="149.0" layoutY="263.0" mnemonicParsing="false" onAction="#handleSevenButton" prefWidth="52.0" style="-fx-background-color: #7b7b7b;" text="7" textFill="WHITE" />
+        <Button fx:id="fourButton" layoutX="149.0" layoutY="296.0" mnemonicParsing="false" onAction="#handleFourButton" prefWidth="52.0" style="-fx-background-color: #7b7b7b;" text="4" textFill="WHITE" />
+        <Button fx:id="oneButton" layoutX="149.0" layoutY="329.0" mnemonicParsing="false" onAction="#handleOneButton" prefWidth="52.0" style="-fx-background-color: #7b7b7b;" text="1" textFill="WHITE" />
+        <Button fx:id="zeroButton" layoutX="149.0" layoutY="362.0" mnemonicParsing="false" onAction="#handleZeroButton" prefWidth="52.0" style="-fx-background-color: #7b7b7b;" text="0" textFill="WHITE" />
+        <Button fx:id="leftBracketButton" layoutX="149.0" layoutY="230.0" mnemonicParsing="false" onAction="#handleLeftBracketButton" prefWidth="52.0" style="-fx-background-color: #434343;" text="(" textFill="WHITE" />
+        <Button fx:id="eightButton" layoutX="215.0" layoutY="263.0" mnemonicParsing="false" onAction="#handleEightButton" prefWidth="52.0" style="-fx-background-color: #7b7b7b;" text="8" textFill="WHITE" />
+        <Button fx:id="fiveButton" layoutX="215.0" layoutY="296.0" mnemonicParsing="false" onAction="#handleFiveButton" prefWidth="52.0" style="-fx-background-color: #7b7b7b;" text="5" textFill="WHITE" />
+        <Button fx:id="twoButton" layoutX="215.0" layoutY="329.0" mnemonicParsing="false" onAction="#handleTwoButton" prefWidth="52.0" style="-fx-background-color: #7b7b7b;" text="2" textFill="WHITE" />
+        <Button fx:id="dotButton" layoutX="215.0" layoutY="362.0" mnemonicParsing="false" onAction="#handleDotButton" prefWidth="52.0" style="-fx-background-color: #7b7b7b;" text="." textFill="WHITE" />
+        <Button fx:id="rightBracketButton" layoutX="215.0" layoutY="230.0" mnemonicParsing="false" onAction="#handleRightBracketButton" prefWidth="52.0" style="-fx-background-color: #434343;" text=")" textFill="WHITE" />
+        <Button fx:id="nineButton" layoutX="278.0" layoutY="263.0" mnemonicParsing="false" onAction="#handleNineButton" prefWidth="52.0" style="-fx-background-color: #7b7b7b;" text="9" textFill="WHITE" />
+        <Button fx:id="sixButton" layoutX="278.0" layoutY="296.0" mnemonicParsing="false" onAction="#handleSixButton" prefWidth="52.0" style="-fx-background-color: #7b7b7b;" text="6" textFill="WHITE" />
+        <Button fx:id="threeButton" layoutX="278.0" layoutY="329.0" mnemonicParsing="false" onAction="#handleThreeButton" prefWidth="52.0" style="-fx-background-color: #7b7b7b;" text="3" textFill="WHITE" />
+        <Button fx:id="equalButton" layoutX="341.0" layoutY="362.0" mnemonicParsing="false" onAction="#handleEqualButton" prefWidth="52.0" style="-fx-background-color: #489df2;" text="=" />
+        <Button fx:id="mulButton" layoutX="341.0" layoutY="263.0" mnemonicParsing="false" onAction="#handleMulButton" prefWidth="52.0" style="-fx-background-color: #489df2;" text="*" />
+        <Button fx:id="divButton" layoutX="341.0" layoutY="230.0" mnemonicParsing="false" onAction="#handleDivButton" prefWidth="52.0" style="-fx-background-color: #489df2;" text="/" />
+        <Button fx:id="minusButton" layoutX="341.0" layoutY="296.0" mnemonicParsing="false" onAction="#handleMinusButton" prefWidth="52.0" style="-fx-background-color: #489df2;" text="-" />
+        <Button fx:id="plusButton" layoutX="341.0" layoutY="329.0" mnemonicParsing="false" onAction="#handlePlusButton" prefWidth="52.0" style="-fx-background-color: #489df2;" text="+" />
+        <Button fx:id="delButton" layoutX="278.0" layoutY="362.0" mnemonicParsing="false" onAction="#handleDelButton" prefWidth="52.0" style="-fx-background-color: #7b7b7b;" text="⌫" textFill="WHITE" />
+        <Button fx:id="clearInputButton" layoutX="278.0" layoutY="231.0" mnemonicParsing="false" onAction="#handleClearInputButton" prefHeight="25.0" prefWidth="52.0" style="-fx-background-color: #63c563;" text="AC" />
+        <Label layoutX="17.0" layoutY="110.0" prefHeight="72.0" prefWidth="80.0" text=" X = " textFill="WHITE" fx:id="xIsField">
+            <font>
+                <Font size="24.0" />
+            </font>
+        </Label>
+        <Label layoutX="481.0" layoutY="14.0" text="Журнал">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Label>
+        <Button fx:id="clearJournalButton" layoutX="404.0" layoutY="2.0" mnemonicParsing="false" onAction="#handleClearJournalButton" prefHeight="25.0" prefWidth="250.0" text="Cear history" />
+        <Label fx:id="outputField" layoutX="151.0" layoutY="120.0" prefHeight="51.0" prefWidth="243.0" style="-fx-background-color: #999999; -fx-text-fill: black;">
+         <font>
+            <Font size="24.0" />
+         </font></Label>
+        <TextField fx:id="setXField" layoutX="81.0" layoutY="120.0" prefHeight="51.0" prefWidth="52.0" style="-fx-background-color: #999999; -fx-text-fill: white;" />
+        <Button fx:id="graphButton" layoutX="149.0" layoutY="191.0" mnemonicParsing="false" onAction="#handleGraphButton" prefHeight="27.0" prefWidth="116.0" style="-fx-background-color: #434343;" text="Graph" textFill="WHITE" />
+        <Button fx:id="creditButton" layoutX="278.0" layoutY="191.0" mnemonicParsing="false" onAction="#handleCreditButton" prefHeight="27.0" prefWidth="116.0" style="-fx-background-color: #434343;" text="Credit" textFill="WHITE" />
+        <Button fx:id="helpButton" layoutX="17.0" layoutY="2.0" mnemonicParsing="false" onAction="#handleHelpButton" prefWidth="80.0" text="Help" />
+        <TextArea fx:id="inputField" layoutX="17.0" layoutY="41.0" prefHeight="72.0" prefWidth="378.0" style="-fx-control-inner-background: #999999; -fx-text-fill: black;">
+            <font>
+                <Font size="24.0" />
+            </font>
+            <opaqueInsets>
+                <Insets />
+            </opaqueInsets>
+        </TextArea>
+        <TextArea fx:id="journalTextArea" editable="false" layoutX="404.0" layoutY="41.0" prefHeight="347.0" prefWidth="250.0" style="-fx-control-inner-background: #999999; -fx-text-fill: black;" text="There's no record in the history" wrapText="true" />
+    </children>
+</AnchorPane>
